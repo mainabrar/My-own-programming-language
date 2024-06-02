@@ -57,7 +57,21 @@ public static void main(String[] args) {
 
 public static void scheduleCondition(Runnable runnable, int time, Condition condition) {
   schedule(() => {
-    if (condition) runnable()
+    if (condition) runnable();
    }, time);
 }
+```
+
+## Important comments
+
+In Java, all comments get discarded at compilation, which makes sense but can be bad for decompilers looking through some code. The alternative to this is usually defining a string with the comment.
+
+```java
+// Old code
+String comment = "This code seems harmful but doesn't go to any servers. Verify in other classes."
+deleteEverything();
+// New code
+!// This code seems harmful but doesn't go to any servers. Verify in another classes.
+!/* trust */!
+deleteEverything();
 ```
