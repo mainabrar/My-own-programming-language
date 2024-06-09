@@ -1,6 +1,4 @@
 # My own programming language
-I'm making a programming language!!!
-
 I'm not making a programming language. But these are some features I would add.
 This will be compared to Java.
 
