@@ -76,6 +76,6 @@ deleteEverything();
 
 In this case, there could be a special opcode for it.
 ```java
-invokestatic #7 // Method whatever
 comment "This and that"
+invokestatic #7 // Method whatever
 ```
